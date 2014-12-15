@@ -144,7 +144,7 @@ namespace PerfectWard
             _WardSpots.Add(new Vector3(8223.67f, 8110.15f, 60.0f));   // Purple Nidlane
             _WardSpots.Add(new Vector3(9736.8f, 6916.26f, 51.98f));   // Purple Mid Path
             _WardSpots.Add(new Vector3(2222.31f, 9964.1f, 53.2f));   // Blue Tri Top
-
+        }
         private static void InitializeSafeWardSpots()
         {
             _SafeWardSpots = new List<WardSpot>();
