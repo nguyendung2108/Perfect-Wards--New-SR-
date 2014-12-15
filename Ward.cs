@@ -169,7 +169,7 @@ namespace PerfectWard
             // Blue Mid -> round Bush // Inconsistent Placement
             _SafeWardSpots.Add(new WardSpot(new Vector3(5474.0f, 7906.0f, 51.67f),
                                             new Vector3(5132.65f, 8373.2f, 51.67f),
-                                            new Vector3(5123.9f, 8457.76f, -21.23),
+                                            new Vector3(5123.9f, 8457.76f, -21.23f),
                                             new Vector3(5474.0f, 7906.0f, 51.67f)));
 
             // Blue Mid -> River Lane Bush
