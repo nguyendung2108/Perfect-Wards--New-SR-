@@ -93,7 +93,7 @@ namespace PerfectWard
                         if (wardSpellSlot != null)
                         {
                             Console.WriteLine("putting ward2");
-                            Player.SummonerSpellbook.CanUseSpell(WardSlot)(Vector3)Wardspoting._PutSafeWard.ClickPosition);
+                            Player.SummonerSpellbook.Castspell(WardSlot)(Vector3)Wardspoting._PutSafeWard.ClickPosition);
                             lastuseward = Environment.TickCount;
 
                         }
