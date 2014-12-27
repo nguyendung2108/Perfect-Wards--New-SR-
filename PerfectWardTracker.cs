@@ -1,4 +1,4 @@
-﻿using LeagueSharp;
+using LeagueSharp;
 using LeagueSharp.Common;
 using SharpDX;
 using System;
@@ -59,7 +59,7 @@ namespace PerfectWard
                     if (wardSpellSlot != null)
                     {
                         Console.WriteLine("putting ward");
-                        Player.Spellbook.CastSpell(ward.SpellSlot, ((Vector3)nearestWard));
+                        wardSpellSlot.UseItem((Vector3)nearestWard);
                         lastuseward = Environment.TickCount;
                     }
                 }
@@ -93,7 +93,7 @@ namespace PerfectWard
                         if (wardSpellSlot != null)
                         {
                             Console.WriteLine("putting ward2");
-                            Spellbook.CastSpell(ward.SpellSlot,(Vector3)Wardspoting._PutSafeWard.ClickPosition);
+                            wardSpellSlot.UseItem((Vector3)Wardspoting._PutSafeWard.ClickPosition);
                             lastuseward = Environment.TickCount;
 
                         }
