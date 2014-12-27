@@ -58,6 +58,7 @@ namespace PerfectWard
                 {
                     if (wardSpellSlot != null)
                     {
+                        var ward = FindBestWardItem();
                         Console.WriteLine("putting ward");
                         wardSpellSlot.Spellbook.CastSpell((ward.SpellSlot)nearestWard);
                         lastuseward = Environment.TickCount;
