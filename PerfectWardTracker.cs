@@ -59,7 +59,7 @@ namespace PerfectWard
                     if (wardSpellSlot != null)
                     {
                         Console.WriteLine("putting ward");
-                        Spellbook.CastSpell(wardSpellSlot, nearestWard());
+                        Spellbook.CastSpell(wardSpellSlot, nearestWard;
                         lastuseward = Environment.TickCount;
                     }
                 }
