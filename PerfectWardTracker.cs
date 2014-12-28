@@ -38,7 +38,7 @@ namespace PerfectWard
         void Game_OnGameUpdate(EventArgs args)
         {
 
-            spellbook wardSpellSlot = null;
+            InventorySlot wardSpellSlot = null;
             if (Config.Item("placekey").GetValue<KeyBind>().Active)
             {
                 wardSpellSlot = Items.GetWardSlot();
