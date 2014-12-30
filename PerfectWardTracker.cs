@@ -52,7 +52,7 @@ namespace PerfectWard
                 {
                     return;
                 }
-                Vector3? nearestWard = Ward.FindNearestWardSpot(Drawing.ScreenToWorld(Game.CursorPos.X, Game.CursorPos.Y));
+                nearestWard = Ward.FindNearestWardSpot(Drawing.ScreenToWorld(Game.CursorPos.X, Game.CursorPos.Y));
 
                 if (nearestWard != null)
                 {
