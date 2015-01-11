@@ -144,6 +144,19 @@ namespace PerfectWard
             _WardSpots.Add(new Vector3(8223.67f, 8110.15f, 60.0f));   // Purple Nidlane
             _WardSpots.Add(new Vector3(9736.8f, 6916.26f, 51.98f));   // Purple Mid Path
             _WardSpots.Add(new Vector3(2222.31f, 9964.1f, 53.2f));   // Blue Tri Top
+            _WardSpots.Add(new Vector3(9255.25f, 2183.65f, 57.5f)); // Blue Gollems Bush
+            _WardSpots.Add(new Vector3(12523.26f, 1635.91f, 57.0f)); // Bot Side Bush1
+            _WardSpots.Add(new Vector3(13258.06f, 2463.80f, 51.36f)); // Bot Side Bush2
+            _WardSpots.Add(new Vector3(14052.25f, 6988.55f, 52.30f)); // Bot Red Side Bush
+            _WardSpots.Add(new Vector3(11786.12f, 4106.47f, -70.71f)); // Bot River Bush
+            _WardSpots.Add(new Vector3(3063.29f, 10905.67f, -67.48f)); // Top River Bush
+            _WardSpots.Add(new Vector3(2398.38f, 13521.84f, 52.83f)); // Top Side Bush1
+            _WardSpots.Add(new Vector3(1711.55f, 12998.53f, 52.49f)); // Top Side Bush2
+            _WardSpots.Add(new Vector3(1262.71f, 12310.28f, 52.83f)); // Top Side Bush3
+            _WardSpots.Add(new Vector3(805.90f, 8138.49f, 52.83f)); // Top Blue Side Bush
+            _WardSpots.Add(new Vector3(7216.65f, 14115.32f, 52.83f)); // Top Red Side Bush
+            _WardSpots.Add(new Vector3(5704.763f, 12762.87f, 52.83f)); // Blue Gollems Bush
+            _WardSpots.Add(new Vector3(9211.42f, 11480.54f, 53.16f)); // Red Base Bush
         }
         private static void InitializeSafeWardSpots()
         {
