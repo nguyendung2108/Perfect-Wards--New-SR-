@@ -158,6 +158,7 @@ namespace PerfectWard
             _WardSpots.Add(new Vector3(5704.763f, 12762.87f, 52.83f)); // Blue Gollems Bush
             _WardSpots.Add(new Vector3(9211.42f, 11480.54f, 53.16f)); // Red Base Bush
             _WardSpots.Add(new Vector3(7761.92f, 842.31f, 49.44f)); // Bot Blue Side Bush
+            _WardSpots.Add(new Vector3(6526.12f, 8367.01f, -71.21f)); // Mid/Top River Bush
         }
         private static void InitializeSafeWardSpots()
         {
