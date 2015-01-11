@@ -159,6 +159,8 @@ namespace PerfectWard
             _WardSpots.Add(new Vector3(9211.42f, 11480.54f, 53.16f)); // Red Base Bush
             _WardSpots.Add(new Vector3(7761.92f, 842.31f, 49.44f)); // Bot Blue Side Bush
             _WardSpots.Add(new Vector3(6526.12f, 8367.01f, -71.21f)); // Mid/Top River Bush
+            _WardSpots.Add(new Vector3(8598.335f, 4729.91f, 51.93f)); // Red Buff/River Bush
+            _WardSpots.Add(new Vector3(8417.12f, 6521.46f, -71.24f)); // Mid/Top River Bush
         }
         private static void InitializeSafeWardSpots()
         {
@@ -210,12 +212,6 @@ namespace PerfectWard
                                             new Vector3(8705.95f, 6819.1f, 53.04f),
                                             new Vector3(8718.88f, 6764.86f, 95.75f),
                                             new Vector3(9072.0f, 7158.0f, 53.04f)));
-
-            // Purple Mid -> River Lane Bush
-            _SafeWardSpots.Add(new WardSpot(new Vector3(8530.27f, 6637.38f, 46.98f),
-                                            new Vector3(8539.27f, 6637.38f, 46.98f),
-                                            new Vector3(8396.10f, 6464.81f, 46.98f),
-                                            new Vector3(8779.17f, 6804.70f, 46.98f)));
 
             // Purple Bottom -> Solo Bush
             _SafeWardSpots.Add(new WardSpot(new Vector3(12422.0f, 4508.0f, 51.73f),
