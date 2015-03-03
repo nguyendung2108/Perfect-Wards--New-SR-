@@ -51,7 +51,7 @@ namespace PerfectWard
 
 
       Config.SubMenu("AutoBushRevealer").AddItem(new MenuItem("AutoBushEnabled", "Enabled").SetValue(true));
-      Config.SubMenu("AutoBushRevealer").AddItem(new MenuItem("AutoBushKey", "Key").SetValue(new KeyBind("SpaceBar".ToCharArray()[0], KeyBindType.Press)));
+      Config.SubMenu("AutoBushRevealer").AddItem(new MenuItem("AutoBushKey", "Key").SetValue(new KeyBind(32, KeyBindType.Press)));
       Config.SubMenu("Drawing").AddItem(new LeagueSharp.Common.MenuItem("drawplaces", "Draw ward places").SetValue(new Circle(true, System.Drawing.Color.FromArgb(100, 255, 0, 255))));
       Config.SubMenu("Drawing").AddItem(new LeagueSharp.Common.MenuItem("drawDistance", "Don't draw if the distance >")).SetValue(new Slider(2000, 10000, 1));
       Config.SubMenu("Drawing").AddItem(new LeagueSharp.Common.MenuItem("placekey", "NormalWard Key").SetValue(new KeyBind("Z".ToCharArray()[0], KeyBindType.Press)));
