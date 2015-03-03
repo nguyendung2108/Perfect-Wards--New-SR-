@@ -66,7 +66,7 @@ namespace PerfectWard
             //Drawing.DrawCircle(Position, WARD_INDICATOR_RADIUS, System.Drawing.Color.Red);
 
             Vector2 TextPos = Drawing.WorldToScreen(Position);
-            Drawing.DrawCircle(Position, 80.0f, DrawColor);
+            Render.Circle.DrawCircle(Position, 80.0f, DrawColor);
 
             if (AliveTo != float.MaxValue)
             {
@@ -319,7 +319,7 @@ namespace PerfectWard
 
                 if (IsOnScreen(screenPos[0], screenPos[1]) && ObjectManager.Player.Distance(wardPos) < PerfectWard.PerfectWardTracker.Config.Item("drawDistance").GetValue<Slider>().Value)
                 {
-                    Drawing.DrawCircle(wardPos, WARD_INDICATOR_RADIUS, wardColor);
+                  Render.Circle.DrawCircle(wardPos, WARD_INDICATOR_RADIUS, wardColor);
                     //Console.WriteLine(wardPos.X);
                 }
             }
@@ -339,11 +339,11 @@ namespace PerfectWard
                 Vector2 screenPos = Drawing.WorldToScreen(safeWardSpot.MagneticPosition);
                 if (IsOnScreen(screenPos[0], screenPos[1]) && ObjectManager.Player.Distance(safeWardSpot.MagneticPosition) < PerfectWard.PerfectWardTracker.Config.Item("drawDistance").GetValue<Slider>().Value)
                 {
-                    Drawing.DrawCircle(safeWardSpot.WardPosition, 31.0f, wardColor);
-                    Drawing.DrawCircle(safeWardSpot.WardPosition, 32.0f, wardColor);
+                  Render.Circle.DrawCircle(safeWardSpot.WardPosition, 31.0f, wardColor);
+                  Render.Circle.DrawCircle(safeWardSpot.WardPosition, 32.0f, wardColor);
 
-                    Drawing.DrawCircle(safeWardSpot.MagneticPosition, 99.0f, wardColor);
-                    Drawing.DrawCircle(safeWardSpot.MagneticPosition, 100.0f, wardColor);
+                  Render.Circle.DrawCircle(safeWardSpot.MagneticPosition, 99.0f, wardColor);
+                  Render.Circle.DrawCircle(safeWardSpot.MagneticPosition, 100.0f, wardColor);
 
 
                     
@@ -360,7 +360,6 @@ namespace PerfectWard
                     Vector2 screenDirectionVector = Drawing.WorldToScreen(newVector);
 
                     Drawing.DrawLine(screenMagneticPos[0], screenMagneticPos[1], screenDirectionVector[0], screenDirectionVector[1], 2.5f, arrowColor);
-                  
                 }
             }
         }
