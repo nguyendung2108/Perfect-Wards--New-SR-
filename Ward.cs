@@ -137,11 +137,11 @@ namespace PerfectWard
             _WardSpots.Add(new Vector3(9757.9f, 8768.25f, 50.73f));    // Purple Mid T1
 
             _WardSpots.Add(new Vector3(4749.79f, 5890.76f, 53.59f));   // Blue Mid T1
-            _WardSpots.Add(new Vector3(5983.58f, 1547.98f, 52.99f));    // Blue Bot T2
+            _WardSpots.Add(new Vector3(5217.58f, 1288.98f, 77.63f));    // Blue Botlane inner Turret 
             _WardSpots.Add(new Vector3(1213.70f, 5324.73f, 58.77f));    // Blue Top T2
 
-            _WardSpots.Add(new Vector3(6523.58f, 6743.31f, 60.0f));   // Blue MidLane
-            _WardSpots.Add(new Vector3(8223.67f, 8110.15f, 60.0f));   // Purple Nidlane
+            _WardSpots.Add(new Vector3(6620.58f, 6743.31f, 60.0f));   // Blue MidLane/outer Turret
+            _WardSpots.Add(new Vector3(8120.67f, 8110.15f, 60.0f));   // Purple MidLane/outer Turret
             _WardSpots.Add(new Vector3(9736.8f, 6916.26f, 51.98f));   // Purple Mid Path
             _WardSpots.Add(new Vector3(2222.31f, 9964.1f, 53.2f));   // Blue Tri Top
             _WardSpots.Add(new Vector3(9255.25f, 2183.65f, 57.5f)); // Blue Gollems Bush
