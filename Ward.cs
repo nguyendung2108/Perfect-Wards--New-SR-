@@ -145,7 +145,7 @@ namespace PerfectWard
             _WardSpots.Add(new Vector3(5217.58f, 1288.98f, 77.63f));    // Blue Botlane inhib Turret 
             _WardSpots.Add(new Vector3(1213.70f, 5324.73f, 58.77f));    // Blue Top T2
 
-            _WardSpots.Add(new Vector3(6620.58f, 6743.31f, 60.0f));   // Blue MidLane/outer Turret
+            _WardSpots.Add(new Vector3(6623.58f, 6973.31f, 51.85f));   // Blue MidLane/outer Turret
             _WardSpots.Add(new Vector3(8120.67f, 8110.15f, 60.0f));   // Purple MidLane/outer Turret
             _WardSpots.Add(new Vector3(9736.8f, 6916.26f, 51.98f));   // Purple Mid Path
             _WardSpots.Add(new Vector3(2222.31f, 9964.1f, 53.2f));   // Blue Tri Top
