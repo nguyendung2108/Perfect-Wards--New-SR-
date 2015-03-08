@@ -111,7 +111,9 @@ namespace PerfectWard
             _WardSpots.Add(new Vector3(2757.31f, 5194.54f, 52.94f));    // Blue North GatE
             _WardSpots.Add(new Vector3(5172.51f, 3116.71f, 51.05f));    // Blue South Gate
             _WardSpots.Add(new Vector3(5488.53f, 5657.80f, 51.03f));    // Blue Midlane inner Turret 
-            _WardSpots.Add(new Vector3(9176.99f, 9367.65f, 52.51f));    // Red Midlane inner Turret
+            _WardSpots.Add(new Vector3(9176.99f, 9367.65f, 52.51f));    // Purple Midlane inner Turret
+            _WardSpots.Add(new Vector3(12017.83f, 9787.35f, 52.30f));    // Purple South Gate
+            _WardSpots.Add(new Vector3(9704.83f, 11848.35f, 52.30f));    // Purple North Gate
             _WardSpots.Add(new Vector3(3261.93f, 7773.65f, 60.0f));    // Blue Golem
             _WardSpots.Add(new Vector3(7831.46f, 3501.13f, 60.0f));      // Blue Lizard
             _WardSpots.Add(new Vector3(10586.62f, 3067.93f, 60.0f));     // Blue Tri Bush
