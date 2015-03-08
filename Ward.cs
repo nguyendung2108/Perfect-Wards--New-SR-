@@ -106,10 +106,10 @@ namespace PerfectWard
         {
             _WardSpots = new List<Vector3>();
 
-            _WardSpots.Add(new Vector3(2757.31f 5194.54f 52.94f));    // Blue North GatE
-            _WardSpots.Add(new Vector3(5172.51f 3116.71f 51.05f));    // Blue South Gate
-            _WardSpots.Add(new Vector3(4855.53f 4992.80f 50.28f));    // Blue Midlane inner Turret 
-            _WardSpots.Add(new Vector3(9276.99f 9367.65f 52.51f));    // Red Midlane inner Turret
+            _WardSpots.Add(new Vector3(2757.31f, 5194.54f, 52.94f));    // Blue North GatE
+            _WardSpots.Add(new Vector3(5172.51f, 3116.71f, 51.05f));    // Blue South Gate
+            _WardSpots.Add(new Vector3(4855.53f, 4992.80f, 50.28f));    // Blue Midlane inner Turret 
+            _WardSpots.Add(new Vector3(9276.99f, 9367.65f, 52.51f));    // Red Midlane inner Turret
             _WardSpots.Add(new Vector3(3261.93f, 7773.65f, 60.0f));    // Blue Golem
             _WardSpots.Add(new Vector3(7831.46f, 3501.13f, 60.0f));      // Blue Lizard
             _WardSpots.Add(new Vector3(10586.62f, 3067.93f, 60.0f));     // Blue Tri Bush
