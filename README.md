@@ -1,6 +1,6 @@
 =============================================
 
-Perfect-Wards--New-SR-            Version 1.4
+Perfect-Wards--New-SR-        Version 1.4.1.0
 
 Updated and maintained by DrunkenNinja & DanZ
 
