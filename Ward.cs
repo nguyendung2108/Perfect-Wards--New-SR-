@@ -107,6 +107,8 @@ namespace PerfectWard
             _WardSpots = new List<Vector3>();
 
             _WardSpots.Add(new Vector3(9551.15f, 137.19f, 60.83f));     // Top Blue Inhib Turret
+            _WardSpots.Add(new Vector3(9200.85f, 3824.71f, 56.45f));     // Behind Dragon Pit
+            _WardSpots.Add(new Vector3(5571.69f, 11101.82f, 56.83f));     // Behind Baron Pit
             _WardSpots.Add(new Vector3(11398.03f, 1440.97f, 50.64f));    // Blue Bot Outer Turret
             _WardSpots.Add(new Vector3(4281.39f, 4467.51f, 71.63f));    // Blue Midlane inhib Turret
             _WardSpots.Add(new Vector3(2757.31f, 5194.54f, 52.94f));    // Blue North GatE
