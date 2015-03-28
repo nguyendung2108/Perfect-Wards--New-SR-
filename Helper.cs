@@ -37,7 +37,7 @@ namespace PerfectWard
       Game.OnUpdate += Game_OnUpdate;
     }
 
-    void Game.OnUpdate(EventArgs args)
+    void Game_OnUpdate(EventArgs args)
     {
       var time = Environment.TickCount;
 
