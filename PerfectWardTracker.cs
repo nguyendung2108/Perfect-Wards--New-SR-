@@ -40,7 +40,7 @@ namespace PerfectWard
 
     public PerfectWardTracker()
     {
-      Game.OnGameLoad += OnGameStart;
+      Game.OnGameStart += OnGameStart;
       Game.OnUpdate += Game_OnGameUpdate;
       Drawing.OnDraw += OnDraw;
 
