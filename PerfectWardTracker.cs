@@ -40,8 +40,8 @@ namespace PerfectWard
 
     public PerfectWardTracker()
     {
-      OnGameStart += OnGameStart;
-      Game.OnUpdate += Game_OnGameUpdate;
+      Game.OnGameStart += OnGameStart;
+      Game.OnGameUpdate += Game_OnGameUpdate;
       Drawing.OnDraw += OnDraw;
 
 
@@ -51,7 +51,7 @@ namespace PerfectWard
 
 
       Config.SubMenu("AutoBushRevealer").AddItem(new MenuItem("AutoBushEnabled", "Enabled").SetValue(true));
-      Config.SubMenu("AutoBushRevealer").AddItem(new MenuItem("AutoBushKey", "Key").SetValue(new KeyBind(32, KeyBindType.Press)));
+      Config.SubMenu("AutoBushRevealer").AddItem(new MenuItem("AutoBushKey", "Key").SetValue(new KeyBind("SpaceBar".ToCharArray()[0], KeyBindType.Press)));
       Config.SubMenu("Drawing").AddItem(new LeagueSharp.Common.MenuItem("drawplaces", "Draw ward places").SetValue(new Circle(true, System.Drawing.Color.FromArgb(100, 255, 0, 255))));
       Config.SubMenu("Drawing").AddItem(new LeagueSharp.Common.MenuItem("drawDistance", "Don't draw if the distance >")).SetValue(new Slider(2000, 10000, 1));
       Config.SubMenu("Drawing").AddItem(new LeagueSharp.Common.MenuItem("placekey", "NormalWard Key").SetValue(new KeyBind("Z".ToCharArray()[0], KeyBindType.Press)));
@@ -61,7 +61,7 @@ namespace PerfectWard
 
       foreach (var ward in _wards)
         Config.SubMenu("AutoBushUseWards").AddItem(new MenuItem("AutoBush" + ward.Key, ward.Value).SetValue(true));
-      Game.OnUpdate += Game_OnGameUpdate;
+      Game.OnGameUpdate += Game_OnGameUpdate;
 
     }
 
@@ -80,7 +80,7 @@ namespace PerfectWard
       return ObjectManager.Get<Obj_AI_Base>().FirstOrDefault(x => x.Name == name && x.Distance(pos) <= maxDistance);
     }
 
-    private static void OnGameUpdate(EventArgs args)
+    void Game_OnGameUpdate(EventArgs args)
     {
       int time = Environment.TickCount;
       if (Config.Item("AutoBushEnabled").GetValue<bool>() && Config.Item("AutoBushKey").GetValue<KeyBind>().Active)
