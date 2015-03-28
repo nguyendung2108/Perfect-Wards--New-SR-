@@ -34,10 +34,10 @@ namespace PerfectWard
 
       EnemyInfo = EnemyTeam.Select(x => new EnemyInfo(x)).ToList();
     
-      Game.OnUpdate += Game_OnUpdate;
+      Game.OnUpdate += OnGameUpdate;
     }
 
-    void Game_OnUpdate(EventArgs args)
+    void OnGameUpdate(EventArgs args)
     {
       var time = Environment.TickCount;
 
