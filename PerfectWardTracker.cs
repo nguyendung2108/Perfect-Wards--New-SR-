@@ -41,7 +41,7 @@ namespace PerfectWard
     public PerfectWardTracker()
     {
       Game.OnGameStart += OnGameStart;
-      Game.OnGameUpdate += Game_OnGameUpdate;
+      Game.OnUpdate += OnGameUpdate;
       Drawing.OnDraw += OnDraw;
 
 
@@ -80,7 +80,7 @@ namespace PerfectWard
       return ObjectManager.Get<Obj_AI_Base>().FirstOrDefault(x => x.Name == name && x.Distance(pos) <= maxDistance);
     }
 
-    void Game_OnGameUpdate(EventArgs args)
+    private static void OnGameUpdate(EventArgs args)
     {
       int time = Environment.TickCount;
       if (Config.Item("AutoBushEnabled").GetValue<bool>() && Config.Item("AutoBushKey").GetValue<KeyBind>().Active)
