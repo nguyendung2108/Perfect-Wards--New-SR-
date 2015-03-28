@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using LeagueSharp;
@@ -33,14 +33,12 @@ namespace PerfectWard
       EnemyTeam = champions.Where(x => x.IsEnemy);
 
       EnemyInfo = EnemyTeam.Select(x => new EnemyInfo(x)).ToList();
-    
-      Game.OnUpdate += OnGameUpdate;
+
+      Game.OnGameUpdate += Game_OnGameUpdate;
     }
 
-    void OnGameUpdate(EventArgs args)
+    void Game_OnGameUpdate(EventArgs args)
     {
-      var time = Environment.TickCount;
-
       var time = Environment.TickCount;
 
       foreach (EnemyInfo enemyInfo in EnemyInfo.Where(x => x.Player.IsVisible))
