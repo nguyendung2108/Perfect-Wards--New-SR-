@@ -33,15 +33,14 @@ namespace PerfectWard
       EnemyTeam = champions.Where(x => x.IsEnemy);
 
       EnemyInfo = EnemyTeam.Select(x => new EnemyInfo(x)).ToList();
-    }
     
-    static void Main(string[] args)
-    {
-      CustomEvents.Game.OnGameLoad += Game_OnGameLoad;
+      Game.OnUpdate += Game_OnUpdate;
     }
 
-    static void Game_OnGameLoad(EventArgs args)
+    void Game_OnUpdate(EventArgs args)
     {
+      var time = Environment.TickCount;
+
       var time = Environment.TickCount;
 
       foreach (EnemyInfo enemyInfo in EnemyInfo.Where(x => x.Player.IsVisible))
