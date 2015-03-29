@@ -58,7 +58,7 @@ namespace PerfectWard
 
 
       foreach (var ward in _wards)
-        Config.SubMenu("AutoBushUseWards").AddItem(new MenuItem("AutoBush" + ward.Key, ward.Value).SetValue(true));
+        Config.SubMenu("Auto Bush Use Wards").AddItem(new MenuItem("AutoBush" + ward.Key, ward.Value).SetValue(true));
       Game.OnUpdate += Game_OnGameUpdate;
 
     }
