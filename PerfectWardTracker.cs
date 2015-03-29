@@ -55,9 +55,9 @@ namespace PerfectWard
       Config.SubMenu("AutoBushRevealer").AddItem(new MenuItem("AutoBushKey", "Key").SetValue(new KeyBind("Ctrl".ToCharArray()[0], KeyBindType.Press)));
       Config.AddSubMenu(new Menu("Auto Bush Revealer", "AutoBushRevealer"));
       Config.SubMenu("AutoBushRevealer").AddItem(new MenuItem("AutoBushEnabled", "Enabled").SetValue(true));
-      Config.AddToMainMenu();
+      Config.AddSubMenu(new Menu();
       foreach (var ward in _wards)      
-      Config.SubMenu("Auto Bush Use Wards").AddItem(new MenuItem("AutoBush" + ward.Key, ward.Value).SetValue(true));
+      Config.SubMenu("Auto Bush Ward Type").AddItem(new MenuItem("AutoBush" + ward.Key, ward.Value).SetValue(true));
       
       Game.OnUpdate += Game_OnGameUpdate;
 
