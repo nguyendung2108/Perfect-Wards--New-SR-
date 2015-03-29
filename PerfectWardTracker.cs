@@ -47,7 +47,7 @@ namespace PerfectWard
 
       //Create the menu
       Config = new LeagueSharp.Common.Menu("PerfectWard", "PerfectWard", true);
-      Config.AddToMainMenu();
+      
       Config.SubMenu("Drawing").AddItem(new LeagueSharp.Common.MenuItem("drawplaces", "Draw ward places").SetValue(new Circle(true, System.Drawing.Color.FromArgb(100, 255, 0, 255))));
       Config.SubMenu("Drawing").AddItem(new LeagueSharp.Common.MenuItem("drawDistance", "Don't draw if the distance >")).SetValue(new Slider(2000, 10000, 1));
       Config.SubMenu("Drawing").AddItem(new LeagueSharp.Common.MenuItem("placekey", "NormalWard Key").SetValue(new KeyBind("Z".ToCharArray()[0], KeyBindType.Press)));
@@ -55,8 +55,9 @@ namespace PerfectWard
       Config.SubMenu("AutoBushRevealer").AddItem(new MenuItem("AutoBushKey", "Key").SetValue(new KeyBind("Ctrl".ToCharArray()[0], KeyBindType.Press)));
       Config.AddSubMenu(new Menu("Auto Bush Revealer", "AutoBushRevealer"));
       Config.SubMenu("AutoBushRevealer").AddItem(new MenuItem("AutoBushEnabled", "Enabled").SetValue(true));
-      Config.SubMenu("Auto Bush Use Wards").AddItem(new MenuItem("AutoBush" + ward.Key, ward.Value).SetValue(true));
+      Config.AddToMainMenu();
       foreach (var ward in _wards)      
+      Config.SubMenu("Auto Bush Use Wards").AddItem(new MenuItem("AutoBush" + ward.Key, ward.Value).SetValue(true));
       
       Game.OnUpdate += Game_OnGameUpdate;
 
